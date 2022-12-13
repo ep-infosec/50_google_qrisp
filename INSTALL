@@ -1,0 +1,15 @@
+Installation notes for QRisp
+----------------------------
+
+QRisp is a program written in C++ (using C++11 features) using Google's protocol
+buffer library for data structures.
+It does not come with the Makefile. The build system is based on Bazel (Google's
+build system). Make sure you have bazel (http://bazel.io) installed.
+
+The main binary can be built via
+
+$ bazel build qrisp:qrisp
+
+and lives under
+
+./bazel-bin/qrisp/qrisp
